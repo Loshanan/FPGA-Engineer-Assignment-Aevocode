@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "I:/Aevocode/src/pwmGen.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pwmGen
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "I:/Aevocode/src/pwmGen_tb.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module pwmGen_tb
