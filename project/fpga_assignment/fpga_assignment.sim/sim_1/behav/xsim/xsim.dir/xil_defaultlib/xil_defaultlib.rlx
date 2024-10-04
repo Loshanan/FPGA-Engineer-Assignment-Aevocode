@@ -1,0 +1,10 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+I:/Aevocode/project/fpga_assignment/fpga_assignment.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+I:/Aevocode/src/axiSlave.sv,1728025352,systemVerilog,,I:/Aevocode/src/fCounter.sv,,axiSlave,,,,,,,,
+I:/Aevocode/src/fCounter.sv,1728047041,systemVerilog,,I:/Aevocode/src/pwmGen.sv,,fCounter,,,,,,,,
+I:/Aevocode/src/main.sv,1728036912,systemVerilog,,,,main,,,,,,,,
+I:/Aevocode/src/pwmGen.sv,1728051774,systemVerilog,,I:/Aevocode/src/pwmGen_tb.sv,,pwmGen,,,,,,,,
+I:/Aevocode/src/pwmGen_tb.sv,1728051951,systemVerilog,,,,pwmGen_tb,,,,,,,,

@@ -1,7 +1,7 @@
 module fCounter #(
-    parameter CLK_PERIOD,
-    parameter PPR,
-    parameter REG_UPDATE_FREQ     // 10Hz
+    parameter CLK_PERIOD = 100 , // (100ns) 10MHz
+    parameter PPR = 10,         // ppr of the motor encoder
+    parameter REG_UPDATE_FREQ = 10   // speed register update frequency
 ) (
     input clk,
     input data,
@@ -13,11 +13,8 @@ module fCounter #(
 
     logic [31:0] clkCounter;
     logic [31:0] dataCounter;
-    
-    initial begin
-        dataCounter = 0;
-        clkCounter = 0; 
-    end
+    logic [31:0] rpmReg;
+   
 
     always_ff @( posedge data ) begin
         dataCounter <= dataCounter + 1;
@@ -25,11 +22,12 @@ module fCounter #(
 
     always_ff @( posedge clk ) begin
         if (clkCounter >= UPDATE_PERIOD) begin
-            rpm <= CONST * dataCounter;
+            rpmReg <= CONST * dataCounter;
             dataCounter <= 0;
             clkCounter <= 0;
         end
         else clkCounter <= clkCounter + 1;
     end
-
+    
+    assign rpm = rpmReg;
 endmodule
