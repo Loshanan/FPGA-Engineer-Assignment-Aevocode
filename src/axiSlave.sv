@@ -1,6 +1,6 @@
 module axiSlave #(
-    parameter DATA_WIDTH = 32,
-    parameter ADDR_WIDTH = 2
+    parameter DATA_WIDTH,
+    parameter ADDR_WIDTH
 ) (
     input logic clk,
 
