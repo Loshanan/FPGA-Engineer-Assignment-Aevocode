@@ -2,7 +2,7 @@ module main #(
     parameter CLK_PERIOD = 100, // (100ns) 10MHz
     parameter PPR = 10,         // ppr of the motor encoder
     parameter DATA_WIDTH = 32,  // width of the 3 registers
-    parameter ADDR_WIDTH = 2    // for those 3 registers
+    parameter ADDR_WIDTH = 2,   // for those 3 registers
     parameter REG_UPDATE_FREQ = 10   // speed register update frequency
 ) (
     input logic clk,
