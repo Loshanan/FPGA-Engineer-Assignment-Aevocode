@@ -14,6 +14,6 @@ Top Schemetic of module 1:
 3) motor rpm counter
  encoder signal set to 1000 rpm
  ![alt text](rpmcount.png)
- final result innaccurate due to frequency based measurement approach
+ final result innaccuracy due to frequency based measurement approach
 
 
