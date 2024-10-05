@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+I:/Aevocode/project/fpga_assignment/fpga_assignment.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+I:/Aevocode/src/axiSlave.sv,1728117543,systemVerilog,,I:/Aevocode/src/axiSlave_tb.sv,,axiSlave,,,,,,,,
+I:/Aevocode/src/axiSlave_tb.sv,1728117390,systemVerilog,,,,axiSlave_tb,,,,,,,,

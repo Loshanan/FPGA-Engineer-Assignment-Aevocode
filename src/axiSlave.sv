@@ -1,17 +1,4 @@
 module axiSlave #(
-<<<<<<< HEAD
-    parameter DATA_WIDTH,
-    parameter ADDR_WIDTH
-) (
-    input logic clk,
-
-    input logic [ADDR_WIDTH - 1:0] writeAddress,
-    input logic [DATA_WIDTH - 1:0] writeData,
-    output logic writeResponse,
-
-    input logic [ADDR_WIDTH - 1:0] readAddress,
-    output logic [DATA_WIDTH - 1:0] readData,
-=======
     parameter DATA_WIDTH = 32,
     parameter ADDR_WIDTH = 2
 ) (
@@ -36,32 +23,12 @@ module axiSlave #(
     output logic [DATA_WIDTH - 1:0] rData, // read data
     output logic rvalid,        // valid read response is present
 
->>>>>>> master
 
     input logic [DATA_WIDTH - 1:0] reg1,
     output logic [DATA_WIDTH - 1:0] reg2,
     output logic [DATA_WIDTH - 1:0] reg3
 );
 
-<<<<<<< HEAD
-    // writing block
-    always_ff @( posedge clk ) begin
-        if (writeAddress == 2'b10) begin
-            reg2 <= writeData;
-            writeResponse <= 1'b1;
-        end        
-        else if (writeAddress == 2'b11) begin
-            reg3 <= writeData;
-            writeResponse <= 1'b1;
-        end
-        else writeResponse <= 1'b0;
-    end
-
-    //reading block
-    always_ff @( posedge clk ) begin
-        if (readAddress == 2'b01) readData <= reg1;
-        else readData <= '0;
-=======
     logic [ADDR_WIDTH - 1:0] writeAddress;
     logic [DATA_WIDTH - 1:0] writeData;
     // logic writeResponse;
@@ -132,7 +99,6 @@ module axiSlave #(
                 rvalid <= 0;
             end
         end
->>>>>>> master
     end
 
 endmodule
