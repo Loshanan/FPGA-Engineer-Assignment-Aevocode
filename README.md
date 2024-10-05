@@ -1,7 +1,7 @@
 # FPGA-Engineer-Assignment-Aevocode
 
 Top Schemetic of module 1:
-![alt text](schematic.png)
+![alt text](Schematic.png)
 
 1) AXI slave module implemented and testbench added
 
