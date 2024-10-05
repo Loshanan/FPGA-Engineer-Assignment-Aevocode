@@ -100,8 +100,21 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+<<<<<<< HEAD
       <File Path="$PPRDIR/../../src/fCounter_tb.sv">
         <FileInfo>
+=======
+      <File Path="$PPRDIR/../../src/axiSlave_tb.sv">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/../../src/fCounter_tb.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+>>>>>>> master
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -109,6 +122,7 @@
       </File>
       <File Path="$PPRDIR/../../src/pwmGen_tb.sv">
         <FileInfo>
+<<<<<<< HEAD
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -116,6 +130,8 @@
       </File>
       <File Path="$PPRDIR/../../src/axiSlave_tb.sv">
         <FileInfo>
+=======
+>>>>>>> master
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
