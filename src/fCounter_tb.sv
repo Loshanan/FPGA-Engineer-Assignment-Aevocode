@@ -16,6 +16,7 @@ module fCounter_tb ();
         .REG_UPDATE_FREQ(REG_UPDATE_FREQ)
     ) dut (
         .clk(clk),
+        .rst(rst),
         .data(data),
         .rpm(rpm)
     );
@@ -29,13 +30,13 @@ module fCounter_tb ();
         rst = 0;
         data = 0;
         @(posedge clk)
-        #200
+//        #200
         rst = 1;
-        repeat(5) begin // expected rpm = 1000
+        repeat(500) begin // expected rpm = 1000
             data = 1;
-            #6_000_000;
+            #3_000_000;
             data = 0;
-            #6_000_000;
+            #3_000_000;
         end
         $finish;
     end
