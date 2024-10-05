@@ -40,7 +40,7 @@ module pwmGen_tb ();
         @(posedge clk)
         #200
         rst = 1;
-        #5000
+        #10000
         $finish;
     end
     
