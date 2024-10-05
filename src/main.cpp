@@ -10,9 +10,11 @@ int main() {
     int pwmPeriod = 100;  // in micro s
     setPWMPeriod(pwmPeriod);
 
+    float t = 0;
     while (true) {
         currentSpeed = readSpeedRegister;
 
+        if (t > 10) targetSpeed = 2000;
         float dutyCycle = pid.compute(targetSpeed, currentSpeed);
 
         int dutyCycle_us = (int)(pwmPeriod * (dutyCycle / 100.));
@@ -21,7 +23,8 @@ int main() {
 
         setPWMDutyCycle(dutyCycle_us);
 
+        t += 0.1;
         sleep(0.1);
     }
-    
+
 }
